@@ -1,5 +1,9 @@
 # Angular Material Design Icon Sets #
 
+**UPDATED: Feb 28, 2020**
+Removed "sparse" checkout requirement
+Added custom "Fit" icon to Google Material Image iconset
+
 **UPDATED: Jul 1, 2015**
 
 Added support thanks to [@Stexxen](https://github.com/Stexxen) [Pull Request #6](https://github.com/nkoterba/material-design-iconsets/pull/6) to pull and build community material design icons from: https://materialdesignicons.com/.  Note that the resulting iconset file contains many duplicates from the default Google Material Design Icons and may also have slightly different names than their original Google counterparts.
@@ -35,6 +39,7 @@ The repository contains the initial set of iconsets in the `Iconsets` folder.
 To re-create the icons from the Google Material Design icons source, do the following:
 
 ```javascript
+nvm install // Installs Node v6.x which is required for this repo.
 npm install // Installs the necessary libs
 npm run init // Sets up the material-design-icons repo in the 'material-design-icons' folder
 npm run build // Downloads the latest icons from 'material-design-icons' git repo and builds the iconsets and saves them in the 'iconsets' folder
