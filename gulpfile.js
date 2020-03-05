@@ -99,12 +99,6 @@ gulp.task('build', ['pull'], function () {
 	var folders = getFolders(ICONSRC_GOOGLE);
 
 	var tasks = folders.map(function (folder) {
-		if (folder === 'image') {
-			// Make sure to place ic_fit_24px.svg in the image folder for google material icons
-			var fitIcon = fs.readFileSync('ic_fit_24px.svg', 'utf8');
-			fs.writeFileSync(path.join(ICONSRC_GOOGLE, folder, 'svg', 'production', 'ic_fit_24px.svg'), fitIcon,
-				{ encoding: 'utf8', mode: 777 });
-		}
 		return gulp.src(path.join(ICONSRC_GOOGLE, folder, '**', '*.svg'))
 			//.pipe(print())
 			.pipe(xmlEdit(function (doc) {

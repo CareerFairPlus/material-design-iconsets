@@ -2,7 +2,6 @@
 
 **UPDATED: Feb 28, 2020**
 Removed "sparse" checkout requirement
-Added custom "Fit" icon to Google Material Image iconset
 
 **UPDATED: Jul 1, 2015**
 
